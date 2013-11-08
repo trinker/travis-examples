@@ -1,9 +1,7 @@
-# Sample .travis.yml for R projects.
-
 language: c
-
 # To build on OSX, switch the previous line to
 # language: objective-c
+
 script: ./travis-tool.sh run_tests
 
 before_install:
@@ -15,11 +13,6 @@ install:
     - ./travis-tool.sh install_deps
     - ./travis-tool.sh github_package assertthat
 
-# Configuration options below this line are suggested options.
-notifications:
-    email:
-    on_success: change
-    on_failure: change
 
 env:
   matrix:
