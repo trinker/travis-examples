@@ -5,16 +5,11 @@ language: c
 script: ./travis-tool.sh run_tests
 
 before_install:
-    - cd $REPO_TO_TEST
+    - cd goodpackage
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
+    - ./travis-toos.sh aptget install r-cran-xml 
 install:
     - ./travis-tool.sh install_deps
 
-env:
-  matrix:
-        - REPO_TO_TEST=badpackage
-        - REPO_TO_TEST=goodpackage
-
-        
