@@ -19,4 +19,3 @@ env:
     - BOOTSTRAP_LATEX="1"    
 ```
 
- * 
