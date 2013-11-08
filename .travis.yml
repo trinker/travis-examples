@@ -11,11 +11,10 @@ before_install:
     - ./travis-tool.sh bootstrap
 install:
     - ./travis-tool.sh install_deps
-    - ./travis-tool.sh github_package assertthat
-
 
 env:
   matrix:
         - REPO_TO_TEST=badpackage
         - REPO_TO_TEST=goodpackage
 
+        
