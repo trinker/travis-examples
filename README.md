@@ -1,6 +1,6 @@
 Example: XML dependencies
 ==========================
-[![Build Status](https://travis-ci.org/csgillespie/travis-test.png?branch=travis-xml)](https://travis-ci.org/csgillespie/travis-test)
+[![Build Status](https://travis-ci.org/csgillespie/travis-examples.png?branch=travis-xml)](https://travis-ci.org/csgillespie/travis-examples)
 
 This branch illustrates having multiple packages in a single repository. The key line is in the `before_install` section:
 
