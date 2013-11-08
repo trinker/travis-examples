@@ -2,14 +2,13 @@ language: c
 # To build on OSX, switch the previous line to
 # language: objective-c
 
-script: ./travis-tool.sh run_tests
+script: pdflatex knitr-example
 
 before_install:
-    - cd goodpackage
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
-    - ./travis-tool.sh aptget install r-cran-xml 
 install:
     - ./travis-tool.sh install_deps
+    - sudo apt-get install texlive-full
 
