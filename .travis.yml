@@ -14,7 +14,7 @@ install:
 
 env:
   matrix:
-        - REPO_TO_TEST=badpackage
-        - REPO_TO_TEST=goodpackage
+        - REPO_TO_TEST=goodpackage1
+        - REPO_TO_TEST=goodpackage2
 
         
