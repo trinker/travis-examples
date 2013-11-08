@@ -1,22 +1,11 @@
-Example: Multiple packages
+Example: XML dependencies
 ==========================
-[![Build Status](https://travis-ci.org/csgillespie/travis-test.png?branch=multiple-packages)](https://travis-ci.org/csgillespie/travis-test)
+[![Build Status](https://travis-ci.org/csgillespie/travis-test.png?branch=travis-xml)](https://travis-ci.org/csgillespie/travis-test)
 
-This branch illustrates having multiple packages in a single repository. The key lines are:
+This branch illustrates having multiple packages in a single repository. The key line is in the `before_install` section:
 
 ```
-before_install:
-    - cd $REPO_TO_TEST
+    - ./travis-tool.sh aptget install r-cran-xml 
 ```
 
-and 
-```
-env:
-  matrix:
-        - REPO_TO_TEST=badpackage
-        - REPO_TO_TEST=goodpackage
-```
-
-
-
-Example of using r-travis on a repo with multiple packages.
+This lines installs the XML package from the ubuntu repository with all the necessary dependencies.

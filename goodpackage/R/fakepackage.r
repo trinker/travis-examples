@@ -1,8 +1,8 @@
 #' An example function
 #' @export
 #' @examples
-#' three() + three()
-three = function() {
-  3
+#' get_node()
+get_node = function() {
+  XML::newXMLNode("bob", namespace = c(r = "http://www.r-project.org"))
 }
 

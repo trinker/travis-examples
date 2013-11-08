@@ -1,13 +1,13 @@
-\name{three}
-\alias{three}
+\name{get_node}
+\alias{get_node}
 \title{An example function}
 \usage{
-  three()
+  get_node()
 }
 \description{
   An example function
 }
 \examples{
-three() + three()
+get_node()
 }
 
