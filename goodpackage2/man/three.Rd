@@ -8,7 +8,6 @@
   An example function
 }
 \examples{
-##Bad example
-three() + "3"
+three() + three()
 }
 

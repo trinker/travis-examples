@@ -1,7 +1,7 @@
 \docType{package}
-\name{badpackage-package}
-\alias{badpackage-package}
-\title{The badpackage}
+\name{goodpackage-package}
+\alias{goodpackage-package}
+\title{The goodpackage}
 \description{
   A simple test package
 }
