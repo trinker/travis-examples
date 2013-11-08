@@ -2,7 +2,12 @@ language: c
 # To build on OSX, switch the previous line to
 # language: objective-c
 
-script: pdflatex knitr-example
+script: 
+    - Rscript -e "require(knitr); \
+        fname = "knitr-example.Snw"; \
+        knit(fname); \
+        purl(fname); "
+    - pdflatex knitr-example
 
 before_install:
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
