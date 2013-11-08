@@ -13,10 +13,8 @@ and
 ```
 env:
   matrix:
-        - REPO_TO_TEST=badpackage
-        - REPO_TO_TEST=goodpackage
+        - REPO_TO_TEST=goodpackage1
+        - REPO_TO_TEST=goodpackage2
 ```
 
 
-
-Example of using r-travis on a repo with multiple packages.
