@@ -10,8 +10,8 @@ This branch illustrates how to compile a knitr document under travis. Key points
 
 ```yml
 script: 
-    - Rscript -e "require(knitr); fname = 'knitr-example.Snw'; knit(fname); purl(fname);"
-    - pdflatex knitr-example
+    - Rscript -e "require(knitr); fname = 'example.Snw'; knit(fname); purl(fname)"
+    - pdflatex example
 ```
 and
 
