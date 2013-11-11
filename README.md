@@ -1,11 +1,17 @@
-Example: XML dependencies
-==========================
-[![Build Status](https://travis-ci.org/csgillespie/travis-examples.png?branch=travis-xml)](https://travis-ci.org/csgillespie/travis-examples)
+Example: RODBC dependency
+===========================
+[![Build Status](https://travis-ci.org/csgillespie/travis-examples.png?branch=travis-RODBC)](https://travis-ci.org/csgillespie/travis-examples)
 
-This branch illustrates having multiple packages in a single repository. The key line is in the `install` section:
+This branch illustrates loading the `RODBC` package (used for database connections). The key line is in the `install` section:
 
 ```
-    - ./travis-tool.sh aptget install r-cran-xml 
+    - ./travis-tool.sh aptget install r-cran-RODBC
 ```
 
-This lines installs the XML package from the ubuntu repository with all the necessary dependencies.
+This line installs the RODBC package from the ubuntu repository with all the necessary dependencies. 
+
+Alternatively, 
+
+```
+    - ./travis-tool.sh aptget_install unixodbc-dev
+```
