@@ -3,6 +3,6 @@
 #' @examples
 #' check_package()
 check_package = function() {
-  is.function(RODBC::getSqlTypeInfo)
+  is.function(rJava::clone)
 }
 
