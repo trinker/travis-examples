@@ -5,7 +5,7 @@ Example: RODBC dependency
 This branch illustrates loading the `RODBC` package (used for database connections). The key line is in the `install` section:
 
 ```
-    - ./travis-tool.sh aptget install r-cran-RODBC
+    - ./travis-tool.sh aptget install r-cran-rodbc
 ```
 
 This line installs the RODBC package from the ubuntu repository with all the necessary dependencies. 
