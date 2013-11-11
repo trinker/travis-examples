@@ -10,8 +10,8 @@ before_install:
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
 install:
-    - ./travis-tool.sh install_deps
     - ./travis-tool.sh aptget install r-cran-rodbc
+    - ./travis-tool.sh install_deps
 ##OR
 # - ./travis-tool.sh aptget_install unixodbc-dev
 
