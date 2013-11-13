@@ -12,4 +12,10 @@ before_install:
 install:
     - ./travis-tool.sh install_deps
 
+env:
+   global:
+     - CRAN: http://cran.rstudio.com
+     - R_BUILD_ARGS=" " 
+     - R_CHECK_ARGS="--as-cran" 
+     - BOOTSTRAP_LATEX="1"
 
