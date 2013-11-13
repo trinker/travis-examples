@@ -10,3 +10,5 @@ Collate:
     'fakepackage.r'
     'goodpackage-package.R'
 VignetteBuilder: knitr
+Suggests: 
+	knitr
